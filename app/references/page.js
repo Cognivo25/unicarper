@@ -1,7 +1,13 @@
 import Site from '../components/Site';
 import { BigCta } from '../components/Icons';
+import { pageMeta, breadcrumbLd, JsonLd } from '../seo';
 
-export const metadata = { title: 'References | Unicarper Design & Build' };
+export const metadata = pageMeta({
+  path: '/references',
+  title: 'Projects: Pools, Spas, Interiors & Landscape',
+  description: 'Fiberglass pools, spa shells, hot tubs, residential interiors and landscape work by Unicarper. Browse the gallery or download the full catalogue.',
+  keywords: ['fiberglass pool projects', 'spa and hot tub gallery', 'interior design portfolio Bangalore'],
+});
 
 const filters = [
   ['*', 'Show all'],
@@ -30,13 +36,14 @@ const references = [
 export default function References() {
   return (
     <Site>
+      <JsonLd data={breadcrumbLd('References', '/references')} />
       <div className="tm-hero-area tm-hero-ptb">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
               <div className="tm-hero-content">
                 <span className="tm-hero-subtitle">Gallery &amp; catalogue</span>
-                <h4 className="tm-hero-title fs-220 tp-char-animation">References</h4>
+                <h1 className="tm-hero-title fs-220 tp-char-animation">References</h1>
               </div>
               <div className="tm-hero-text tp_title_anim">
                 <p>

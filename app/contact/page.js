@@ -1,17 +1,25 @@
 import Site from '../components/Site';
+import { pageMeta, breadcrumbLd, JsonLd } from '../seo';
 
-export const metadata = { title: 'Contact | Unicarper Design & Build' };
+export const metadata = pageMeta({
+  path: '/contact',
+  title: 'Contact: Get a Quote for Your Project',
+  description: 'Get a quote for interiors, fabrication, pools, modular pods or FRP sumps. Call +91-9538444564 or email projects@unicarper.com. Bengaluru.',
+  keywords: ['contact Unicarper', 'interior design quote Bangalore', 'FRP pool price enquiry'],
+});
 
 const U = '/unicarper/opt/';
-const MAP = 'https://www.google.com/maps?q=Byappanahalli,+Bengaluru,+Karnataka+562149';
+const MAP = 'https://www.google.com/maps?q=Anand+Building,+KG+Halli,+Jalahalli+West,+Bangalore+560015';
 
 const projectTypes = [
-  'Interior Design-Build',
-  'Outdoor Environments',
-  'Pools, Spas & Jacuzzis',
-  'Landscape & Water Features',
-  'Security & Surveillance',
-  'PMC Services',
+  'Residential Interiors',
+  'Commercial Interiors',
+  'Industrial Design',
+  'In-House Fabrication',
+  'Smart Pools, Jacuzzis & Hot Tubs',
+  'Architectural Modular Pods',
+  'Composite Water Infrastructure',
+  'Landscape & FRP Décor',
   'Catalogue Inquiry',
   'Other',
 ];
@@ -19,6 +27,7 @@ const projectTypes = [
 export default function Contact() {
   return (
     <Site>
+      <JsonLd data={breadcrumbLd('Contact', '/contact')} />
       <div className="inner-bg" data-background="/assets/img/home-01/team/team-details-bg.png">
         <div className="tm-hero-area tm-hero-ptb p-relative">
           <div className="container">
@@ -26,7 +35,7 @@ export default function Contact() {
               <div className="col-xl-12">
                 <div className="tm-hero-content">
                   <span className="tm-hero-subtitle">Discuss your project</span>
-                  <h4 className="tm-hero-title-big tp-char-animation">Get <br /> in touch</h4>
+                  <h1 className="tm-hero-title-big tp-char-animation">Get <br /> in touch</h1>
                 </div>
               </div>
             </div>
@@ -40,7 +49,7 @@ export default function Contact() {
                 <div className="col-xl-6">
                   <div className="cn-contactform-2-map">
                     <iframe
-                      title="Unicarper headquarters, Bengaluru"
+                      title="Unicarper registered office, Bangalore"
                       src={`${MAP}&output=embed`}
                       style={{ border: 0 }}
                       allowFullScreen
@@ -109,16 +118,16 @@ export default function Contact() {
             <div className="row">
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className="cn-contact-2-content text-center">
-                  <h4 className="cn-contact-2-title">Headquarters</h4>
+                  <h4 className="cn-contact-2-title">Registered Office</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-1.webp`} width="90" height="90" alt="" />
                     <img src={`${U}contact-2.webp`} width="90" height="90" alt="" />
                   </div>
                   <div className="cn-contact-2-info-details">
                     <a className="pb-15" href={MAP} target="_blank" rel="noopener noreferrer">
-                      Sy. no. 81, Srinivasa Nagar, Byappanahalli, Bengaluru, Karnataka 562149
+                      Unicarper - Design &amp; Build<br />A Unit of Triune Business Ventures Pvt Ltd.<br />Anand Building, #18, Office 1, KG Halli, Jalahalli West, Bangalore 560015
                     </a>
-                    <span>Headquartered in Bangalore, delivering nationwide.</span>
+                    <span>Production facility: 15,000 sq ft across two units in Chellikere, Kalyan Nagar, Bengaluru.</span>
                   </div>
                 </div>
               </div>
@@ -130,7 +139,7 @@ export default function Contact() {
                     <img src={`${U}contact-4.webp`} width="90" height="90" alt="" />
                   </div>
                   <div className="cn-contact-2-info-details">
-                    <a className="pb-15" href="tel:+919900096972">+91-9900096972</a>
+                    <a className="pb-15" href="tel:+919538444564">+91-9538444564</a>
                     <a href="mailto:projects@unicarper.com">projects@unicarper.com</a>
                   </div>
                 </div>
@@ -144,7 +153,7 @@ export default function Contact() {
                   </div>
                   <div className="cn-contact-2-info-details">
                     <a className="pb-15" href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">
-                      Pools, spas, FRP murals, wall sculptures, planters and custom outdoor elements.
+                      Pools, jacuzzis, prefab pods, FRP wall art, furniture, planters and underground sumps.
                     </a>
                     <a href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
                   </div>

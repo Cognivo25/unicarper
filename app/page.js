@@ -11,11 +11,11 @@ export default function Home() {
                            <div className="tp-hero-3-circle-shape">
                               <span></span>
                            </div>
-                           <h4 className="tp-hero-3-title tp_reveal_anim">
-                              <span className="tp-reveal-line">Unified design.</span>
-                              <span className="tp-reveal-line">Structured execution.</span>
-                           </h4>
-                           <span className="tp-hero-3-category tp_reveal_anim">interiors / outdoor / pools &amp; spas / landscape water / security / PMC</span>
+                           <h1 className="tp-hero-3-title tp_reveal_anim">
+                              <span className="tp-reveal-line">Spaces that work</span>{' '}
+                              <span className="tp-reveal-line">harder for you.</span>
+                           </h1>
+                           <span className="tp-hero-3-category tp_reveal_anim">design / engineering / fabrication / pools / modular pods / water infrastructure</span>
                            <a className="tp-btn-black-2" href="/contact">
                               Discuss Your Project
                               <span className="p-relative">
@@ -53,62 +53,62 @@ export default function Home() {
                               <div className="swiper-wrapper tp-gallery-titming">
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                                  <div className="swiper-slide">
                                     <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="" />
+                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
                                     </div>
                                  </div>
                               </div>
@@ -132,7 +132,7 @@ export default function Home() {
                                        fill="#4F4F56" />
                                  </svg>
                               </span>
-                              <span className="tp-subtitle-text tp_text_invert">Design-build aggregator</span>
+                              <span className="tp-subtitle-text tp_text_invert">Engineering | Fabrication</span>
                               <span>
                                  <svg width="13" height="44" viewBox="0 0 13 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +143,7 @@ export default function Home() {
                               </span>
                            </span>
                            <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                              One plan. One coordination layer. <span> <br />One accountable team.</span>
+                              We design. We build. <br />We deliver.
                            </h4>
                         </div>
                      </div>
@@ -157,10 +157,10 @@ export default function Home() {
                      <div className="col-xl-6 col-lg-6 col-md-8">
                         <div className="tp-about-3-content">
                            <p className="mb-30 tp_fade_bottom">
-                              Projects slow down when designers, vendors, contractors and site teams work separately. Unicarper brings design, procurement, vendors, site crews and project managers under one delivery plan.
+                              Unicarper is a full-service interior design and engineering firm headquartered in Bengaluru, delivering end-to-end design, build and fabrication across residential, commercial and industrial projects.
                            </p>
                            <p className="mb-45 tp_fade_bottom">
-                              You get clearer scope, controlled execution and a smoother handover, without chasing multiple teams.
+                              With our own 15,000 sq ft production facility, we control the entire build, from MS and SS fabrication to wood joinery and specialty finishes, so quality and timelines stay in our hands.
                            </p>
                            <a className="tp-btn-black-2 tp_fade_bottom" href="/about">
                               See How We Work
@@ -221,7 +221,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-1.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-1.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass swimming pool by Unicarper" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -236,7 +236,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-2.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-2.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass pool installation" />
                                  </div>
                               </div>
                            </div>
@@ -245,7 +245,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-3.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-3.webp" width="570" height="720" loading="lazy" decoding="async" alt="Residential interior design, Bengaluru" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -260,7 +260,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-4.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-4.webp" width="570" height="720" loading="lazy" decoding="async" alt="Interior living space concept" />
                                  </div>
                               </div>
                            </div>
@@ -269,7 +269,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-5.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-5.webp" width="570" height="720" loading="lazy" decoding="async" alt="Landscape design with planting" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -284,7 +284,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-6.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-6.webp" width="570" height="720" loading="lazy" decoding="async" alt="Outdoor landscape and hardscape" />
                                  </div>
                               </div>
                            </div>
@@ -293,7 +293,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-7.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-7.webp" width="570" height="720" loading="lazy" decoding="async" alt="Pool and spa installation" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -308,7 +308,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-8.webp" width="570" height="720" loading="lazy" decoding="async" alt="" />
+                                    <img src="/unicarper/opt/ref-8.webp" width="570" height="720" loading="lazy" decoding="async" alt="Jacuzzi and hot tub reference" />
                                  </div>
                               </div>
                            </div>
@@ -319,7 +319,7 @@ export default function Home() {
             </div>
             <div className="tp-video-3-area">
                <div className="tp-video-3-wrap p-relative">
-                  <img data-speed=".7" className="play-video" src="/unicarper/opt/banner.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Unicarper project coordination" style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
+                  <img data-speed=".7" className="play-video" src="/unicarper/opt/banner.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Unicarper design and build" style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
                </div>
             </div>
             <div id="services" className="tp-service-3-area pt-130 pb-130">
@@ -339,7 +339,7 @@ export default function Home() {
                                        fill="#4F4F56" />
                                  </svg>
                               </span>
-                              <span className="tp-subtitle-text tp_text_invert">Our verticals</span>
+                              <span className="tp-subtitle-text tp_text_invert">People | Spaces | Possibilities</span>
                               <span>
                                  <svg width="13" height="44" viewBox="0 0 13 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -349,7 +349,7 @@ export default function Home() {
                                  </svg>
                               </span>
                            </span>
-                           <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">Six streams, <br /> one programme</h4>
+                           <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">What we <br /> deliver</h4>
                         </div>
                      </div>
                   </div>
@@ -357,18 +357,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">Interior Design-Build</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">Residential &amp; Commercial Interiors</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 Interior concepts, material direction, fit-outs and execution support for residential and commercial spaces.
+                                 Bespoke homes, villaments and turnkey residences, plus offices, retail and hospitality spaces built for brand and productivity.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>Concepts</span>
-                                 <span>Materials</span>
-                                 <span>Fit-outs</span>
+                                 <span>Residential</span>
+                                 <span>Commercial</span>
+                                 <span>Turnkey</span>
                               </div>
                            </div>
                         </div>
@@ -399,18 +399,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">Outdoor Environments</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">Industrial Design</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 Landscaping, hardscape and outdoor living, aligned with the building envelope, drainage and material sequencing.
+                                 Factory layouts, warehouse interiors and manufacturing fit-outs, engineered for workflow, safety and compliance.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>Landscaping</span>
-                                 <span>Hardscape</span>
-                                 <span>Outdoor living</span>
+                                 <span>Factories</span>
+                                 <span>Warehouses</span>
+                                 <span>Logistics hubs</span>
                               </div>
                            </div>
                         </div>
@@ -441,18 +441,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">Pools, Spas &amp; Jacuzzis</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">In-House Fabrication</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 Fiberglass pools, spa shells, jacuzzis and outdoor wellness installations, from product selection to installation.
+                                 MS, SS, wood and custom elements made in our own facility, from structural frames and staircases to cabinetry and joinery.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>Fiberglass pools</span>
-                                 <span>Spa shells</span>
-                                 <span>Jacuzzis</span>
+                                 <span>MS &amp; SS</span>
+                                 <span>Woodwork</span>
+                                 <span>Custom elements</span>
                               </div>
                            </div>
                         </div>
@@ -483,18 +483,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">Landscape &amp; Water Features</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">Smart Pools &amp; Jacuzzis</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 Water walls, cascades, fountains and engineered water bodies, with hydraulics, circulation and finishes as one package.
+                                 Concrete, FRP and composite pools with IoT controls, efficient filtration and LED lighting, plus jacuzzis and hot tubs.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>Water walls</span>
-                                 <span>Cascades</span>
-                                 <span>Fountains</span>
+                                 <span>Concrete &amp; FRP</span>
+                                 <span>Automation</span>
+                                 <span>Hot tubs</span>
                               </div>
                            </div>
                         </div>
@@ -525,18 +525,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">Security &amp; Surveillance</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">Architectural Modular Pods</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 CCTV, access paths, cable routes and rack-room layouts coordinated with civil and MEP work.
+                                 Factory-built prefab spaces for homes, offices, studios and hospitality, assembled rapidly on site.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>CCTV</span>
-                                 <span>Access control</span>
-                                 <span>Rack rooms</span>
+                                 <span>A-frame</span>
+                                 <span>Premium pods</span>
+                                 <span>Site offices</span>
                               </div>
                            </div>
                         </div>
@@ -567,18 +567,18 @@ export default function Home() {
                      <div className="row align-items-start">
                         <div className="col-xl-3 col-lg-3">
                            <div className="tp-service-3-title-box">
-                              <h4 className="tp-service-3-title"><a href="/services">PMC Services</a></h4>
+                              <h4 className="tp-service-3-title"><a href="/services">Composite Water Infrastructure</a></h4>
                            </div>
                         </div>
                         <div className="col-xl-7 col-lg-7">
                            <div className="tp-service-3-content">
                               <p>
-                                 Schedules, vendor cadence, site reporting and change control, with budget and timeline in view throughout.
+                                 FRP underground sumps, reservoirs and distribution networks, corrosion-resistant and designed for long-term performance.
                               </p>
                               <div className="tp-service-3-category">
-                                 <span>Scheduling</span>
-                                 <span>Site reporting</span>
-                                 <span>Change control</span>
+                                 <span>FRP sumps</span>
+                                 <span>Reservoirs</span>
+                                 <span>Distribution</span>
                               </div>
                            </div>
                         </div>

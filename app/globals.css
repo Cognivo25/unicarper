@@ -58,3 +58,19 @@ body:has(.ab-inner-hero-area) #header-sticky:not(.header-sticky) .tp-header-3-lo
 
 /* sticky header: float the pill a little below the top edge instead of flush against it */
 .tp-header-3-area.header-sticky { margin-top: 0 !important; padding-top: 18px; }
+
+/* footer */
+.uc-footer-services { list-style: none; padding: 0; margin: 0; }
+.uc-footer-services li { margin-bottom: 8px; }
+.uc-footer-services a, .uc-footer-contact a { color: rgba(255, 255, 255, 0.7); transition: color .2s; }
+.uc-footer-services a:hover, .uc-footer-contact a:hover { color: #fff; }
+.uc-footer-tagline { font-family: var(--tp-ff-marcellus); font-size: 30px !important; line-height: 1.2 !important; color: #fff !important; }
+.uc-footer-pillars { margin-top: 30px; font-size: 13px !important; letter-spacing: 2px; text-transform: uppercase; color: rgba(255, 255, 255, 0.5) !important; }
+.uc-footer-catalogue { display: inline-block; margin-top: 10px; padding: 10px 22px; border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 40px; color: #fff; font-size: 14px; transition: background .2s, color .2s; }
+.uc-footer-catalogue:hover { background: #fff; color: #19191a; }
+.uc-footer-contact { list-style: none; padding: 0; margin: 0; }
+.uc-footer-contact li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; margin-bottom: 14px; color: rgba(255, 255, 255, 0.7); font-size: 15px; line-height: 1.5; }
+.uc-footer-contact li > span { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255, 255, 255, 0.4); padding-top: 3px; }
+.uc-footer-contact a { overflow-wrap: anywhere; }
+.uc-footer-services a { font-size: 16px; }
+@media (min-width: 1200px) { .tp-footer-3-area .footer-col-3-3 { padding-left: 50px; } }

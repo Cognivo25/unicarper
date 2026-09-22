@@ -49,7 +49,7 @@ export default function Header() {
          <div className="tp-offcanvas-main">
             <div className="tp-offcanvas-content">
                <h3 className="tp-offcanvas-title">Hello There!</h3>
-               <p>Interiors, outdoor works, pools, landscapes, security and PMC, run as one coordinated programme from Bangalore.</p>
+               <p>Design, engineering and fabrication for residential, commercial and industrial spaces, all under one roof in Bengaluru.</p>
             </div>
             <div className="tp-main-menu-mobile d-xl-none"></div>
             <div className="tp-offcanvas-gallery">
@@ -79,9 +79,9 @@ export default function Header() {
             <div className="tp-offcanvas-contact">
                <h3 className="tp-offcanvas-title sm">Information</h3>
                <ul>
-                  <li><a href="tel:+919900096972">+91-9900096972</a></li>
+                  <li><a href="tel:+919538444564">+91-9538444564</a></li>
                   <li><a href="mailto:projects@unicarper.com">projects@unicarper.com</a></li>
-                  <li><a href="https://www.google.com/maps?q=Byappanahalli,+Bengaluru,+Karnataka+562149" target="_blank" rel="noopener noreferrer">Sy. no. 81, Srinivasa Nagar, Byappanahalli, Bengaluru 562149</a></li>
+                  <li><a href="https://www.google.com/maps?q=Anand+Building,+KG+Halli,+Jalahalli+West,+Bangalore+560015" target="_blank" rel="noopener noreferrer">Anand Building, #18, Office 1, KG Halli, Jalahalli West, Bangalore 560015</a></li>
                </ul>
             </div>
          </div>
@@ -112,7 +112,7 @@ export default function Header() {
                   <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                      <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                         <div className="tp-header-3-social d-none d-sm-block">
-                           <a href="tel:+919900096972" aria-label="Call Unicarper"><i className="fa-solid fa-phone"></i></a>
+                           <a href="tel:+919538444564" aria-label="Call Unicarper"><i className="fa-solid fa-phone"></i></a>
                            <a href="mailto:projects@unicarper.com" aria-label="Email Unicarper"><i className="fa-solid fa-envelope"></i></a>
                         </div>
                         <button className="tp-header-3-bar tp-offcanvas-open-btn d-xl-none"><i className="fa-solid fa-bars"></i></button>
