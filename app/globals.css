@@ -1,0 +1,60 @@
+/* width/height attrs only reserve aspect ratio; theme CSS sets widths */
+img { height: auto; }
+
+
+/* white logo over the dark About hero, until the header turns sticky */
+body:has(.ab-inner-hero-area) #header-sticky:not(.header-sticky) .tp-header-3-logo .logo-1 { display: none; }
+body:has(.ab-inner-hero-area) #header-sticky:not(.header-sticky) .tp-header-3-logo .logo-2 { display: inline-block; }
+
+/* Unicarper logo is ~2:1 (template logo was ~3:1), so give it a bit more width */
+#header-sticky .tp-header-logo img, .tp-offcanvas-area .tp-offcanvas-logo img, .tp-footer-3-area .tp-footer-3-logo img { width: 140px; height: auto; }
+
+/* description under each "Why Unicarper" point (About page) */
+.uc-reason-text { margin-top: 10px; font-size: 16px; line-height: 1.6; color: #5d5d63; max-width: 340px; }
+
+.uc-form-note { margin-top: 12px; font-size: 13px; color: rgba(255, 255, 255, 0.6); }
+
+/* project-type dropdown on the contact form, styled like the underlined inputs */
+.cn-contactform-input .nice-select { display: none !important; }
+.cn-contactform-input select {
+  display: block !important; width: 100%; float: none; appearance: none; -webkit-appearance: none;
+  background: transparent; border: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0;
+  color: rgba(255, 255, 255, 0.8); padding: 10px 0; font-size: 18px; outline: none; cursor: pointer;
+}
+.cn-contactform-input select option { color: #19191a; }
+
+/* ---- Navbar pill ----
+   The theme sized a separate .menu-bg with JS (+46px, page offset), which never lined up.
+   The menu box itself is the pill now; links are chips, the current page is highlighted. */
+.menu-bg { display: none !important; }
+.tp-header-3-menu-wrap .tp-header-3-menu-box {
+  padding: 6px;
+  background: rgba(28, 28, 30, 0.82);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  box-shadow: 0 12px 32px -14px rgba(0, 0, 0, 0.45);
+}
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul { display: flex; align-items: center; gap: 2px; margin: 0; padding: 0; }
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul > li { margin: 0; }
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul > li > a {
+  display: block;
+  padding: 11px 22px;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.78);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul > li > a:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul > li.active > a { color: #19191a; background: #fff; }
+.tp-header-3-menu-wrap .tp-header-3-menu > nav > ul > li > a:focus-visible { outline: 2px solid #d4a23c; outline-offset: 2px; }
+/* current page in the mobile (offcanvas) menu */
+.tp-main-menu-mobile li.active > a { color: #d4a23c; }
+/* keep the pill visible when the sticky header floats over dark sections */
+.header-sticky .tp-header-3-menu-wrap .tp-header-3-menu-box { border-color: rgba(255, 255, 255, 0.18); }
+
+/* sticky header: float the pill a little below the top edge instead of flush against it */
+.tp-header-3-area.header-sticky { margin-top: 0 !important; padding-top: 18px; }
