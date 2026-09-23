@@ -7,7 +7,7 @@ const scripts = [
   'vendor/jquery', 'bootstrap-bundle', 'gsap', 'gsap-scroll-to-plugin', 'gsap-scroll-smoother',
   'gsap-scroll-trigger', 'gsap-split-text', 'chroma.min', 'tween-max', 'scroll-magic',
   'range-slider', 'swiper-bundle', 'slick', 'magnific-popup', 'nice-select', 'purecounter',
-  'beforeafter', 'isotope-pkgd', 'imagesloaded-pkgd', 'ajax-form', 'main', 'tp-cursor',
+  'beforeafter', 'isotope-pkgd', 'imagesloaded-pkgd', 'main', 'tp-cursor',
 ];
 
 export default function TemplateScripts() {

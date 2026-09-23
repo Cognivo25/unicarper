@@ -12,7 +12,20 @@ body:has(.ab-inner-hero-area) #header-sticky:not(.header-sticky) .tp-header-3-lo
 /* description under each "Why Unicarper" point (About page) */
 .uc-reason-text { margin-top: 10px; font-size: 16px; line-height: 1.6; color: #5d5d63; max-width: 340px; }
 
-.uc-form-note { margin-top: 12px; font-size: 13px; color: rgba(255, 255, 255, 0.6); }
+/* contact: email/call panel beside the map (no form) */
+.uc-contact-panel { display: flex; flex-direction: column; justify-content: center; height: 100%; padding-top: 60px; padding-bottom: 60px; }
+.uc-contact-panel p { color: rgba(255, 255, 255, 0.7); font-size: 18px; margin-bottom: 40px; max-width: 520px; }
+.uc-contact-actions { display: grid; gap: 14px; max-width: 520px; margin-bottom: 50px; }
+.uc-contact-actions a { justify-content: center; text-align: center; }
+.uc-btn-outline { display: block; padding: 17px 20px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.35); color: #fff; font-weight: 500; transition: background .2s, color .2s; }
+.uc-btn-outline:hover { background: #fff; color: #19191a; }
+.uc-contact-list { list-style: none; padding: 0; margin: 0; max-width: 520px; }
+.uc-contact-list li { display: flex; gap: 24px; padding: 16px 0; border-top: 1px solid rgba(255, 255, 255, 0.15); }
+.uc-contact-list span { flex: 0 0 70px; color: rgba(255, 255, 255, 0.5); font-size: 14px; text-transform: uppercase; letter-spacing: .05em; }
+.uc-contact-list a { color: #fff; }
+.uc-contact-list a:hover { text-decoration: underline; }
+/* info cards: keep titles on one line so the three cards line up */
+.cn-contact-2-title { font-size: clamp(32px, 3vw, 44px); }
 
 /* project-type dropdown on the contact form, styled like the underlined inputs */
 .cn-contactform-input .nice-select { display: none !important; }

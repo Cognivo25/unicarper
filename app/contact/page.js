@@ -11,18 +11,7 @@ export const metadata = pageMeta({
 const U = '/unicarper/opt/';
 const MAP = 'https://www.google.com/maps?q=Anand+Building,+KG+Halli,+Jalahalli+West,+Bangalore+560015';
 
-const projectTypes = [
-  'Residential Interiors',
-  'Commercial Interiors',
-  'Industrial Design',
-  'In-House Fabrication',
-  'Smart Pools, Jacuzzis & Hot Tubs',
-  'Architectural Modular Pods',
-  'Composite Water Infrastructure',
-  'Landscape & FRP Décor',
-  'Catalogue Inquiry',
-  'Other',
-];
+const MAIL = 'mailto:projects@unicarper.com?subject=' + encodeURIComponent('Project enquiry');
 
 export default function Contact() {
   return (
@@ -59,53 +48,18 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="col-xl-6">
-                  <div className="cn-contactform-wrap">
-                    <h4 className="cn-contactform-2-title">Send an inquiry</h4>
-                    {/* submitted over AJAX by assets/js/ajax-form.js; response text is shown in .ajax-response */}
-                    <form id="contact-form" action="/api/contact" method="post">
-                      <div className="cn-contactform-input mb-25">
-                        <label htmlFor="cf-name">Full name</label>
-                        <input id="cf-name" name="name" type="text" placeholder="Your name" required maxLength={100} />
-                      </div>
-                      <div className="cn-contactform-input mb-25">
-                        <label htmlFor="cf-phone">Phone number</label>
-                        <input id="cf-phone" name="phone" type="tel" placeholder="+91" maxLength={30} />
-                      </div>
-                      <div className="cn-contactform-input mb-25">
-                        <label htmlFor="cf-email">Email address</label>
-                        <input id="cf-email" name="email" type="email" placeholder="you@example.com" required maxLength={200} />
-                      </div>
-                      <div className="cn-contactform-input mb-25">
-                        <label htmlFor="cf-type">Project type</label>
-                        <select id="cf-type" name="projectType" defaultValue="">
-                          <option value="" disabled>Select project type</option>
-                          {projectTypes.map((t) => <option key={t} value={t}>{t}</option>)}
-                        </select>
-                      </div>
-                      <div className="cn-contactform-input mb-25">
-                        <label htmlFor="cf-message">Message details</label>
-                        <textarea id="cf-message" name="message" placeholder="Project type, location and expected scope" required maxLength={5000}></textarea>
-                      </div>
-                      <div className="cn-contactform-btn">
-                        <button className="tp-btn-black-md white-bg w-100" type="submit">Submit Inquiry</button>
-                        <p className="ajax-response mt-5"></p>
-                        <p className="uc-form-note">We use the information you submit only to respond to your enquiry.</p>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="cn-contactform-support-area mb-120">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-xl-10">
-                <div className="cn-contactform-support-bg d-flex align-items-center justify-content-center" data-background="/assets/img/inner-contact/contact/contact-bg.png">
-                  <div className="cn-contactform-support-text text-center">
-                    <span>Share your project type, location and expected scope. The team will review your requirement and respond with the next steps.</span>
+                  <div className="cn-contactform-wrap uc-contact-panel">
+                    <h4 className="cn-contactform-2-title">Let&apos;s talk about your project</h4>
+                    <p>Share your project type, location and expected scope. The team will review your requirement and respond with the next steps.</p>
+                    <div className="uc-contact-actions">
+                      <a className="tp-btn-black-md white-bg w-100" href={MAIL}>Email us</a>
+                      <a className="uc-btn-outline w-100" href="tel:+919538444564">Call +91-9538444564</a>
+                    </div>
+                    <ul className="uc-contact-list">
+                      <li><span>Email</span><a href={MAIL}>projects@unicarper.com</a></li>
+                      <li><span>Phone</span><a href="tel:+919538444564">+91-9538444564</a></li>
+                      <li><span>Office</span><a href={MAP} target="_blank" rel="noopener noreferrer">Anand Building, #18, Office 1, KG Halli, Jalahalli West, Bangalore 560015</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -117,8 +71,8 @@ export default function Contact() {
           <div className="container container-1530">
             <div className="row">
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div className="cn-contact-2-content text-center">
-                  <h4 className="cn-contact-2-title">Registered Office</h4>
+                <div className="cn-contact-2-content text-center h-100">
+                  <h4 className="cn-contact-2-title">Office</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-1.webp`} width="90" height="90" alt="" />
                     <img src={`${U}contact-frp-pool.webp`} width="90" height="90" alt="" />
@@ -132,7 +86,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div className="cn-contact-2-content mt-60 text-center">
+                <div className="cn-contact-2-content text-center h-100">
                   <h4 className="cn-contact-2-title">Direct line</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-3.webp`} width="90" height="90" alt="" />
@@ -140,12 +94,12 @@ export default function Contact() {
                   </div>
                   <div className="cn-contact-2-info-details">
                     <a className="pb-15" href="tel:+919538444564">+91-9538444564</a>
-                    <a href="mailto:projects@unicarper.com">projects@unicarper.com</a>
+                    <a href={MAIL}>projects@unicarper.com</a>
                   </div>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
-                <div className="cn-contact-2-content text-center">
+                <div className="cn-contact-2-content text-center h-100">
                   <h4 className="cn-contact-2-title">Catalogue</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-wall-art.webp`} width="90" height="90" alt="" />
