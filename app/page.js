@@ -112,7 +112,7 @@ export default function Home() {
                               Unicarper is a full-service interior design and engineering firm headquartered in Bengaluru, delivering end-to-end design, build and fabrication across residential, commercial and industrial projects.
                            </p>
                            <p className="mb-45 tp_fade_bottom">
-                              With our own 15,000 sq ft production facility, we control the entire build, from MS and SS fabrication to wood joinery and specialty finishes, so quality and timelines stay in our hands.
+                              With our own 8,000 sq ft production facility, we control the entire build, from MS and SS fabrication to wood joinery and specialty finishes, so quality and timelines stay in our hands.
                            </p>
                            <a className="tp-btn-black-2 tp_fade_bottom" href="/about">
                               See How We Work

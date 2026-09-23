@@ -13,7 +13,7 @@ const U = '/unicarper/opt/';
 
 const cards = [
   ['service-icon-2', 'Design & engineering', 'Concept to blueprint: spatial plans, material palettes, 3D visuals, MEP coordination, load calculations and fabrication drawings.'],
-  ['service-icon-1', 'Build & fabrication', 'In-house MS, SS, wood and custom-element production at our 15,000 sq ft facility, so quality and timelines stay in our hands.'],
+  ['service-icon-1', 'Build & fabrication', 'In-house MS, SS, wood and custom-element production at our 8,000 sq ft facility, so quality and timelines stay in our hands.'],
   ['service-icon-3', 'Specialized solutions', 'Smart pools, modular pods, composite water infrastructure and turnkey villaments, delivered under one roof.'],
 ];
 

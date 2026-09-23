@@ -81,7 +81,7 @@ export default function Contact() {
                     <a className="pb-15" href={MAP} target="_blank" rel="noopener noreferrer">
                       Unicarper - Design &amp; Build<br />A Unit of Triune Business Ventures Pvt Ltd.<br />Anand Building, #18, Office 1, KG Halli, Jalahalli West, Bangalore 560015
                     </a>
-                    <span>Production facility: 15,000 sq ft across two units in Chellikere, Kalyan Nagar, Bengaluru.</span>
+                    <span>Production facility: 8,000 sq ft across two units in Chellikere, Kalyan Nagar, Bengaluru.</span>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import { pageMeta, breadcrumbLd, JsonLd } from '../seo';
 export const metadata = pageMeta({
   path: '/about',
   title: 'About: Design, Engineering & Fabrication Firm',
-  description: 'Full-service interior design and engineering firm in Bengaluru with a 15,000 sq ft in-house fabrication facility. IS/BS-compliant, turnkey delivery.',
+  description: 'Full-service interior design and engineering firm in Bengaluru with an 8,000 sq ft in-house fabrication facility. IS/BS-compliant, turnkey delivery.',
   keywords: ['about Unicarper', 'Triune Business Ventures', 'in-house fabrication facility Bangalore'],
 });
 
@@ -20,7 +20,7 @@ const steps = [
 ];
 
 const reasons = [
-  ['End-to-end in-house capability', 'A 15,000 sq ft production facility across two units in Chellikere. MS, SS, wood and custom elements are made in-house, so quality control never leaves our roof.'],
+  ['End-to-end in-house capability', 'An 8,000 sq ft production facility across two units in Chellikere. MS, SS, wood and custom elements are made in-house, so quality control never leaves our roof.'],
   ['Engineering under one roof', 'Civil, mechanical and MEP disciplines work together, closing the gap between design intent and structural execution.'],
   ['Technical compliance', 'Materials and fabricated components comply with IS, BS and international standards, with quality audits from raw material to final installation.'],
   ['Innovation-driven delivery', 'Smart technology, modular construction and advanced materials, from smart pools and modular pods to composite water infrastructure.'],
