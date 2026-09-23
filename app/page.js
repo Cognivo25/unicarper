@@ -236,7 +236,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-6.webp" width="570" height="720" loading="lazy" decoding="async" alt="Outdoor landscape and hardscape" />
+                                    <img src="/unicarper/opt/ref-garden.webp" width="570" height="720" loading="lazy" decoding="async" alt="Landscaped garden walkway with pergola" />
                                  </div>
                               </div>
                            </div>
