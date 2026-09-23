@@ -121,7 +121,7 @@ export default function Contact() {
                   <h4 className="cn-contact-2-title">Registered Office</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-1.webp`} width="90" height="90" alt="" />
-                    <img src={`${U}contact-2.webp`} width="90" height="90" alt="" />
+                    <img src={`${U}contact-frp-pool.webp`} width="90" height="90" alt="" />
                   </div>
                   <div className="cn-contact-2-info-details">
                     <a className="pb-15" href={MAP} target="_blank" rel="noopener noreferrer">
@@ -136,7 +136,7 @@ export default function Contact() {
                   <h4 className="cn-contact-2-title">Direct line</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
                     <img src={`${U}contact-3.webp`} width="90" height="90" alt="" />
-                    <img src={`${U}contact-4.webp`} width="90" height="90" alt="" />
+                    <img src={`${U}contact-jacuzzi.webp`} width="90" height="90" alt="" />
                   </div>
                   <div className="cn-contact-2-info-details">
                     <a className="pb-15" href="tel:+919538444564">+91-9538444564</a>
@@ -148,14 +148,14 @@ export default function Contact() {
                 <div className="cn-contact-2-content text-center">
                   <h4 className="cn-contact-2-title">Catalogue</h4>
                   <div className="cn-contact-2-thumb d-flex justify-content-center">
-                    <img src={`${U}contact-5.webp`} width="90" height="90" alt="" />
-                    <img src={`${U}contact-6.webp`} width="90" height="90" alt="" />
+                    <img src={`${U}contact-wall-art.webp`} width="90" height="90" alt="" />
+                    <img src={`${U}contact-pots.webp`} width="90" height="90" alt="" />
                   </div>
                   <div className="cn-contact-2-info-details">
-                    <a className="pb-15" href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">
+                    <a className="pb-15" href="/assets/catelogue/Unicarper%20Brochure.pdf" target="_blank" rel="noopener noreferrer">
                       Pools, jacuzzis, prefab pods, FRP wall art, furniture, planters and underground sumps.
                     </a>
-                    <a href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+                    <a href="/assets/catelogue/Unicarper%20Brochure.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
                   </div>
                 </div>
               </div>

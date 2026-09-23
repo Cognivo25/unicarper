@@ -15,22 +15,33 @@ const filters = [
   ['.spas', 'Spas'],
   ['.interiors', 'Interiors'],
   ['.landscape', 'Landscape'],
+  ['.pods', 'Pods'],
+  ['.decor', 'FRP décor'],
 ];
 
-// [title, reference type, filter classes] — image is /unicarper/opt/grid-<index>.webp
+// [title, reference type, filter classes, image in /unicarper/opt/]
 const references = [
-  ['Outdoor Pool & Deck', 'Concept reference', 'pools landscape'],
-  ['Resort-Style Interior Lounge', 'Concept reference', 'interiors'],
-  ['Terraced Landscape & Planting', 'Concept reference', 'landscape'],
-  ['Residential Living Room', 'Project reference', 'interiors'],
-  ['Pool & Coping Detail', 'Concept reference', 'pools'],
-  ['Indoor Spa & Wet Area', 'Concept reference', 'spas interiors'],
-  ['Commissioned Fiberglass Pool', 'Product reference', 'pools'],
-  ['Custom Red-Back Hot Tub', 'Product reference', 'spas'],
-  ['Installed White Spa Shell', 'Product reference', 'spas'],
-  ['Fiberglass Pool Installation', 'Product reference', 'pools'],
-  ['Jet Spa Overhead Detail', 'Product reference', 'spas'],
-  ['White Spa Component', 'Product reference', 'spas'],
+  ['Outdoor Pool & Deck', 'Concept reference', 'pools landscape', 'grid-1'],
+  ['Resort-Style Interior Lounge', 'Concept reference', 'interiors', 'grid-2'],
+  ['Terraced Landscape & Planting', 'Concept reference', 'landscape', 'grid-3'],
+  ['Residential Living Room', 'Project reference', 'interiors', 'grid-4'],
+  ['Pool & Coping Detail', 'Concept reference', 'pools', 'grid-5'],
+  ['Indoor Spa & Wet Area', 'Concept reference', 'spas interiors', 'grid-6'],
+  ['Fiberglass Pool with Deck', 'Product reference', 'pools', 'grid-frp-pool'],
+  ['Jacuzzi with Hydrotherapy Jets', 'Product reference', 'pools spas', 'grid-jacuzzi'],
+  ['Fiberglass Pool Shells', 'Product reference', 'pools', 'grid-shells'],
+  ['A-Frame Modular Pod', 'Product reference', 'pods', 'grid-aframe'],
+  ['FRP Relief Wall Art', 'Product reference', 'decor interiors', 'grid-wall-art'],
+  ['FRP Planter Pots', 'Product reference', 'decor landscape', 'grid-pots-black'],
+  ['Tiled Outdoor Swimming Pool', 'Product reference', 'pools', 'grid-pool'],
+  ['Indoor Pool & Lounge', 'Concept reference', 'pools interiors', 'grid-indoor-pool'],
+  ['Modern Modular Pod', 'Product reference', 'pods', 'grid-pod'],
+  ['Terrace FRP Planters', 'Product reference', 'decor landscape', 'grid-planters'],
+  ['Bronze-Finish FRP Pots', 'Product reference', 'decor landscape', 'grid-pots-copper'],
+  ['Foyer & Feature Wall Art', 'Concept reference', 'decor interiors', 'grid-foyer'],
+  ['Double-Height Living Room', 'Concept reference', 'interiors', 'grid-living'],
+  ['Entrance Water Wall', 'Concept reference', 'landscape', 'grid-entrance'],
+  ['Garden Walkway & Pergola', 'Concept reference', 'landscape', 'grid-garden'],
 ];
 
 export default function References() {
@@ -68,17 +79,17 @@ export default function References() {
             </div>
           </div>
           <div className="row grid">
-            {references.map(([title, type, cats], i) => (
+            {references.map(([title, type, cats, img]) => (
               <div className={`col-xl-4 col-lg-6 col-md-6 grid-item ${cats}`} key={title}>
                 <div className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 p-relative">
                   <a href="/contact">
                     <span>
-                      <img className="anim-zoomin" src={`/unicarper/opt/grid-${i + 1}.webp`} width="735" height="870" alt={title} />
+                      <img src={`/unicarper/opt/${img}.webp`} width="735" height="870" alt={title} />
                     </span>
-                    <div className="tp-project-5-2-category tp_fade_anim">
+                    <div className="tp-project-5-2-category">
                       <span>{type}</span>
                     </div>
-                    <div className="tp-project-5-2-content tp_fade_anim">
+                    <div className="tp-project-5-2-content">
                       <h4 className="tp-project-5-2-title-sm">{title}</h4>
                     </div>
                   </a>
@@ -92,7 +103,7 @@ export default function References() {
                 Final pricing depends on dimensions, customization, mould requirements, site
                 conditions and installation scope.
               </p>
-              <a className="tp-btn-black-md" href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">
+              <a className="tp-btn-black-md" href="/assets/catelogue/Unicarper%20Brochure.pdf" target="_blank" rel="noopener noreferrer">
                 Download full catalogue (PDF)
               </a>
             </div>

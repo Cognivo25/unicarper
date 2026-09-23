@@ -38,10 +38,10 @@ export default function Footer() {
                     Spaces that work <br /> harder for you.
                   </p>
                   <a className="tp-footer-3-logo p-relative" href="/">
-                    <img src="/unicarper/opt/logo-white.png" alt="Unicarper Design & Build" />
+                    <img src="/unicarper/opt/logo-2026-white.png" alt="Unicarper Design & Build" />
                   </a>
                   <p className="uc-footer-pillars">Design · Engineer · Fabricate · Deliver</p>
-                  <a className="uc-footer-catalogue" href="https://unicarper.com/unicarper-catalogue.pdf" target="_blank" rel="noopener noreferrer">
+                  <a className="uc-footer-catalogue" href="/assets/catelogue/Unicarper%20Brochure.pdf" target="_blank" rel="noopener noreferrer">
                     Download catalogue (PDF) <span aria-hidden="true">↗</span>
                   </a>
                 </div>

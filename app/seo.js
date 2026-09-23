@@ -6,7 +6,7 @@ export const SITE = {
   tagline: 'Spaces that work harder for you',
   email: 'projects@unicarper.com',
   phone: '+91-9538444564',
-  logo: '/unicarper/opt/logo.png',
+  logo: '/unicarper/opt/logo-2026.png',
   ogImage: '/og-image.jpg',
   address: {
     streetAddress: 'Anand Building, #18, Office 1, KG Halli, Jalahalli West',

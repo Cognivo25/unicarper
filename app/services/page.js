@@ -23,7 +23,7 @@ const verticals = [
   ['Commercial', 'Commercial Interiors', 'Office and corporate interiors that reflect brand identity and foster productivity, plus retail showrooms, hotels, restaurants and mixed-use spaces, delivered turnkey with in-house fabrication.', ['Offices & corporate', 'Executive suites', 'Retail & showrooms', 'Hospitality'], 'service-commercial.webp'],
   ['Industrial', 'Industrial Design', 'Factory layouts, warehouse interiors and manufacturing fit-outs. An engineering-driven approach to workflow, space utilization, safety and regulatory compliance.', ['Manufacturing plants', 'Warehouses', 'Logistics hubs', 'Processing facilities'], 'service-industrial.webp'],
   ['Fabrication', 'In-House Fabrication', 'MS and SS frameworks, staircases, decorative metalwork and fixtures, alongside bespoke furniture, cabinetry, wall paneling and joinery. Every element is quality-checked before installation.', ['MS & SS fabrication', 'Wood & custom elements', 'Modular kitchens & wardrobes', 'Quality checks'], 'service-fabrication.webp'],
-  ['Engineering', 'Engineering Excellence', 'Civil, mechanical and MEP engineering under one roof. Structural and load analysis on every project, with materials and components compliant with IS, BS and international standards.', ['Structural integrity', 'Load analysis', 'MEP coordination', 'Technical compliance'], 'service-6.webp'],
+  ['Engineering', 'Engineering Excellence', 'Civil, mechanical and MEP engineering under one roof. Structural and load analysis on every project, with materials and components compliant with IS, BS and international standards.', ['Structural integrity', 'Load analysis', 'MEP coordination', 'Technical compliance'], 'service-engineering.webp'],
   ['Pools', 'Smart Pools, Jacuzzis & Hot Tubs', 'Concrete, FRP and composite pools with IoT-enabled controls, energy-efficient filtration, LED mood lighting and remote monitoring. From infinity-edge rooftop pools to villa lap pools, plus jacuzzis and hot tubs.', ['Concrete, FRP & composite', 'Automation & IoT', 'Jacuzzis & hot tubs', 'Waterproofing & tiling'], 'service-4.webp'],
   ['Prefab', 'Architectural Modular Pods', 'Factory-built pods with composite materials and steel frameworks, designed for rapid on-site assembly. They work as offices, studios, hospitality suites or home extensions.', ['A-frame & gable pods', 'Premium & rectangle pods', 'Site office pods', 'Scalable layouts'], 'service-pods.webp'],
   ['Water', 'Composite Water Infrastructure', 'FRP underground sumps, overhead reservoirs, treatment units and distribution networks in MS, SS and FRP composites. Corrosion-resistant, designed in-house and installed by our engineering teams.', ['FRP underground sumps', 'Overhead reservoirs', 'Water treatment', 'Distribution networks'], 'service-water.webp'],
@@ -70,7 +70,7 @@ export default function Services() {
                 <div className="sv-hero-thumb-box">
                   <img data-speed=".7" src={`${U}services-hero.webp`} width="1408" height="768" alt="Infinity-edge pool reference" />
                 </div>
-                <img className="sv-hero-thumb-shape d-none d-lg-block" src={`${U}services-shape.webp`} width="139" height="139" alt="" />
+                <img className="sv-hero-thumb-shape d-none d-lg-block" src={`${U}services-jacuzzi.webp`} width="139" height="139" alt="" />
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Services() {
             {[1, 2, 3, 4, 5, 6].map((n) => (
               <div className="swiper-slide" key={n}>
                 <div className={`sv-port-thumb port-thumb-${n % 2 ? 1 : 2}`}>
-                  <img src={`${U}strip-${n}.webp`} width="460" height="260" loading="lazy" alt="" />
+                  <img src={`${U}strip-new-${n}.webp`} width="460" height="260" loading="lazy" alt="" />
                 </div>
               </div>
             ))}

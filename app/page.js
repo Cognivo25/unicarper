@@ -51,66 +51,18 @@ export default function Home() {
                         <div className="tp-gallery-slider-wrap">
                            <div className="swiper-container tp-gallery-slider-active">
                               <div className="swiper-wrapper tp-gallery-titming">
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
+                                 {[
+                                    ['Indoor swimming pool', 1], ['A-frame modular pod', 2], ['Residential living room interior', 3],
+                                    ['Entrance facade with water wall', 'entrance'], ['Landscaped garden walkway', 5], ['FRP planter pots', 6],
+                                    ['FRP relief wall art', 7], ['Commercial office interior', 8], ['FRP underground water sump', 9],
+                                    ['Industrial facility fit-out', 10],
+                                 ].map(([alt, n]) => (
+                                    <div className="swiper-slide" key={n}>
+                                       <div className="tp-gallery-item">
+                                          <img src={`/unicarper/opt/hero-${n}.webp`} width="420" height="740" loading="lazy" decoding="async" alt={alt} />
+                                       </div>
                                     </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-1.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-2.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-4.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-5.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
-                                 <div className="swiper-slide">
-                                    <div className="tp-gallery-item">
-                                       <img src="/unicarper/opt/gallery-3.webp" width="420" height="740" loading="lazy" decoding="async" alt="Unicarper design and build project" />
-                                    </div>
-                                 </div>
+                                 ))}
                               </div>
                            </div>
                         </div>
@@ -221,7 +173,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-1.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass swimming pool by Unicarper" />
+                                    <img src="/unicarper/opt/ref-frp-pool.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass swimming pool with deck by Unicarper" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -236,7 +188,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-2.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass pool installation" />
+                                    <img src="/unicarper/opt/ref-shells.webp" width="570" height="720" loading="lazy" decoding="async" alt="Fiberglass pool shells ready for installation" />
                                  </div>
                               </div>
                            </div>
@@ -293,7 +245,7 @@ export default function Home() {
                            <div className="row">
                               <div className="col-xl-4 col-lg-4 col-md-6">
                                  <div className="tp-project-3-thumb pro-img-1">
-                                    <img src="/unicarper/opt/ref-7.webp" width="570" height="720" loading="lazy" decoding="async" alt="Pool and spa installation" />
+                                    <img src="/unicarper/opt/ref-indoor-pool.webp" width="570" height="720" loading="lazy" decoding="async" alt="Indoor swimming pool with lounge" />
                                  </div>
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
@@ -308,7 +260,7 @@ export default function Home() {
                               </div>
                               <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">
                                  <div className="tp-project-3-thumb pro-img-2">
-                                    <img src="/unicarper/opt/ref-8.webp" width="570" height="720" loading="lazy" decoding="async" alt="Jacuzzi and hot tub reference" />
+                                    <img src="/unicarper/opt/ref-8.webp" width="570" height="720" loading="lazy" decoding="async" alt="Indoor spa lounge concept" />
                                  </div>
                               </div>
                            </div>
@@ -319,7 +271,7 @@ export default function Home() {
             </div>
             <div className="tp-video-3-area">
                <div className="tp-video-3-wrap p-relative">
-                  <img data-speed=".7" className="play-video" src="/unicarper/opt/banner.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Unicarper design and build" style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
+                  <img data-speed=".7" className="play-video" src="/unicarper/opt/banner-pool.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Unicarper design and build" style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
                </div>
             </div>
             <div id="services" className="tp-service-3-area pt-130 pb-130">

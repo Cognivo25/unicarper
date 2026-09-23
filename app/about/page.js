@@ -12,11 +12,11 @@ export const metadata = pageMeta({
 const U = '/unicarper/opt/';
 
 const steps = [
-  ['01', 'Consult'],
-  ['02', 'Design'],
-  ['03', 'Engineer'],
-  ['04', 'Fabricate'],
-  ['05', 'Deliver'],
+  ['01', 'Consult', 'step-consult'],
+  ['02', 'Design', 'step-2'],
+  ['03', 'Engineer', 'step-3'],
+  ['04', 'Fabricate', 'step-fabricate'],
+  ['05', 'Deliver', 'step-5'],
 ];
 
 const reasons = [
@@ -70,8 +70,8 @@ export default function About() {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6">
                 <div className="ab-about-right-thumb p-relative">
-                  <img data-speed="1.1" className="inner-img z-index-5" src={`${U}about-3.webp`} width="230" height="310" alt="Spa jet layout detail" />
-                  <img data-speed="0.9" src={`${U}about-2.webp`} width="640" height="430" alt="Commissioned fiberglass pool" />
+                  <img data-speed="1.1" className="inner-img z-index-5" src={`${U}about-pod.webp`} width="230" height="310" alt="A-frame modular pod" />
+                  <img data-speed="0.9" src={`${U}about-frp-pool.webp`} width="640" height="430" alt="Fiberglass pool with deck and water feature" />
                 </div>
               </div>
             </div>
@@ -132,11 +132,11 @@ export default function About() {
               <div className="tp-team-slider-wrapper">
                 <div className="swiper-container tp-team-slider-active">
                   <div className="swiper-wrapper">
-                    {steps.map(([n, title], i) => (
+                    {steps.map(([n, title, img]) => (
                       <div className="swiper-slide" key={title}>
                         <div className="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
                           <div className="tp-hover-btn-item">
-                            <img src={`${U}step-${i + 1}.webp`} width="380" height="470" loading="lazy" alt={title} />
+                            <img src={`${U}${img}.webp`} width="380" height="470" loading="lazy" alt={title} />
                           </div>
                           <div className="tp-team-content">
                             <span>How we work · {n}</span>

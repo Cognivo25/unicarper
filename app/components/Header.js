@@ -31,8 +31,8 @@ export default function Header() {
          <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
                        <div className="tp-offcanvas-logo">
                <a href="/">
-                  <img className="logo-1" src="/unicarper/opt/logo.png" alt="Unicarper Design & Build" />
-                  <img className="logo-2" src="/unicarper/opt/logo-white.png" alt="Unicarper Design & Build" />
+                  <img className="logo-1" src="/unicarper/opt/logo-2026.png" alt="Unicarper Design & Build" />
+                  <img className="logo-2" src="/unicarper/opt/logo-2026-white.png" alt="Unicarper Design & Build" />
                </a>
             </div>
             <div className="tp-offcanvas-close">
@@ -66,7 +66,7 @@ export default function Header() {
                   </div>
                   <div className="col-md-3 col-3">
                      <div className="tp-offcanvas-gallery-img fix">
-                        <a href="/references"><img src="/unicarper/opt/thumb-3.webp" width="80" height="80" loading="lazy" decoding="async" alt="" /></a>
+                        <a href="/references"><img src="/unicarper/opt/thumb-jacuzzi.webp" width="80" height="80" loading="lazy" decoding="async" alt="" /></a>
                      </div>
                   </div>
                   <div className="col-md-3 col-3">
@@ -94,8 +94,8 @@ export default function Header() {
                <div className="row align-items-center">
                   <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                      <div className="tp-header-logo tp-header-3-logo">
-                        <a className="logo-1" href="/"><img src="/unicarper/opt/logo.png" alt="Unicarper Design & Build" /></a>
-                        <a className="logo-2" href="/"><img src="/unicarper/opt/logo-white.png" alt="Unicarper Design & Build" /></a>
+                        <a className="logo-1" href="/"><img src="/unicarper/opt/logo-2026.png" alt="Unicarper Design & Build" /></a>
+                        <a className="logo-2" href="/"><img src="/unicarper/opt/logo-2026-white.png" alt="Unicarper Design & Build" /></a>
                      </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 d-none d-xl-block">
