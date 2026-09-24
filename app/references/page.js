@@ -32,7 +32,7 @@ const references = [
   ['Fiberglass Pool Shells', 'Product reference', 'pools', 'grid-shells'],
   ['A-Frame Modular Pod', 'Product reference', 'pods', 'grid-aframe'],
   ['FRP Relief Wall Art', 'Product reference', 'decor interiors', 'grid-wall-art'],
-  ['FRP Planter Pots', 'Product reference', 'decor landscape', 'grid-pots-black'],
+  ['FRP Planter Pots', 'Product reference', 'decor interiors', 'grid-pots-black'],
   ['Tiled Outdoor Swimming Pool', 'Product reference', 'pools', 'grid-pool'],
   ['Indoor Pool & Lounge', 'Concept reference', 'pools interiors', 'grid-indoor-pool'],
   ['Modern Modular Pod', 'Product reference', 'pods', 'grid-pod'],
@@ -42,6 +42,25 @@ const references = [
   ['Double-Height Living Room', 'Concept reference', 'interiors', 'grid-living'],
   ['Entrance Water Wall', 'Concept reference', 'landscape', 'grid-entrance'],
   ['Garden Walkway & Pergola', 'Concept reference', 'landscape', 'grid-garden'],
+  ['Corner Whirlpool Spa', 'Product reference', 'spas interiors', 'grid-spa-corner'],
+  ['Twin-Seat Spa with Headrests', 'Project reference', 'spas', 'grid-spa-headrest'],
+  ['Moulded Spa Shell, Pre Fit-Out', 'Project reference', 'spas', 'grid-spa-shell'],
+  ['Spa with Timber Cladding', 'Project reference', 'spas', 'grid-spa-twin'],
+  ['A-Frame Cabin with Deck', 'Concept reference', 'pods', 'grid-pod-aframe-deck'],
+  ['A-Frame Glazed Gable', 'Concept reference', 'pods', 'grid-pod-aframe-night'],
+  ['Garden Glamping Pods', 'Concept reference', 'pods', 'grid-pod-garden'],
+  ['Stacked Modular Pod Home', 'Concept reference', 'pods', 'grid-pod-container'],
+  ['Sculpted Face Planter', 'Concept reference', 'decor interiors', 'grid-decor-face-pot'],
+  ['Rooftop Planter Boxes', 'Concept reference', 'decor landscape', 'grid-decor-terrace-pots'],
+];
+
+// CC BY / BY-SA photos require visible credit.
+const credits = [
+  ['A-frame deck', 'Regriemer', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/w/index.php?curid=21203839'],
+  ['A-frame gable', 'joncutrer', 'CC BY 2.0', 'https://www.flickr.com/photos/47121680@N00/49302333323'],
+  ['Glamping pods', 'ohefin', 'CC BY-SA 2.0', 'https://www.flickr.com/photos/47515486@N05/50522328653'],
+  ['Modular pod home', 'etslee', 'CC BY 2.0', 'https://www.flickr.com/photos/78823104@N00/34261236113'],
+  ['Corner spa', 'Toprural', 'CC BY-SA 2.0', 'https://www.flickr.com/photos/8920684@N05/3586398406'],
 ];
 
 export default function References() {
@@ -106,6 +125,12 @@ export default function References() {
               <a className="tp-btn-black-md" href="/assets/catelogue/Unicarper%20Brochure.pdf" target="_blank" rel="noopener noreferrer">
                 Download full catalogue (PDF)
               </a>
+              <p className="mt-30" style={{ fontSize: 13, opacity: 0.6 }}>
+                Photo credits:{' '}
+                {credits.map(([what, by, lic, url], i) => (
+                  <span key={url}>{i > 0 && ' · '}{what} by <a href={url} target="_blank" rel="noopener noreferrer">{by}</a> ({lic})</span>
+                ))}
+              </p>
             </div>
           </div>
         </div>
