@@ -70,7 +70,6 @@ export default function Services() {
                 <div className="sv-hero-thumb-box">
                   <img data-speed=".7" src={`${U}services-hero.webp`} width="1408" height="768" alt="Infinity-edge pool reference" />
                 </div>
-                <img className="sv-hero-thumb-shape d-none d-lg-block" src={`${U}services-jacuzzi.webp`} width="139" height="139" alt="" />
               </div>
             </div>
           </div>
