@@ -1749,9 +1749,9 @@
 		});
 	
 		let smoother = ScrollSmoother.create({
-			smooth: 2,
+			smooth: 1.25,
 			effects: true,
-			smoothTouch: 0.1,
+			smoothTouch: 0.12,
 			normalizeScroll: false,
 			ignoreMobileResize: true,
 		});
@@ -2353,9 +2353,11 @@
 	
 			gsap.set('.tp-project-3-wrap .pro-img-1 img', {
 				x: '500',
+				scale: 0.94,
 			})
 			gsap.set('.tp-project-3-wrap .pro-img-2 img', {
 				x: '-500',
+				scale: 0.94,
 			})
 	
 			let projects = gsap.utils.toArray(".tp-project-3-wrap");
@@ -2365,6 +2367,7 @@
 	
 				gsap.to($this.find('.pro-img-1 img'), {
 					x: '0',
+					scale: 1,
 					scrollTrigger: {
 						trigger: $this,
 						start: 'top 18%',
@@ -2377,6 +2380,7 @@
 	
 				gsap.to($this.find('.pro-img-2 img'), {
 					x: '0',
+					scale: 1,
 					scrollTrigger: {
 						trigger: $this,
 						start: 'top 18%',
@@ -2749,22 +2753,43 @@
 	});
 
 	if ($('.tp_fade_bottom').length > 0) {
-		gsap.set(".tp_fade_bottom", { y: 100, opacity: 0 });
+		gsap.set(".tp_fade_bottom", { y: 56, opacity: 0, filter: "blur(6px)" });
 		const fadeArray = gsap.utils.toArray(".tp_fade_bottom")
 		fadeArray.forEach((item, i) => {
 			let fadeTl = gsap.timeline({
 				scrollTrigger: {
 					trigger: item,
-					start: "top center+=400",
+					start: "top 84%",
 				}
 			})
 			fadeTl.to(item, {
 				y: 0,
 				opacity: 1,
-				ease: "power2.out",
-				duration: 1.5,
+				filter: "blur(0px)",
+				ease: "power3.out",
+				duration: 1.05,
 			})
 		})
+	}
+
+	// Layered scroll entrances for service rows, with a subtle image scale reveal
+	// alongside the existing horizontal project-image movement.
+	if ($('.tp-service-3-wrap').length > 0) {
+		gsap.utils.toArray('.tp-service-3-wrap').forEach((item) => {
+			const details = item.querySelectorAll('.tp-service-3-title-box, .tp-service-3-content, .tp-service-3-btn-box');
+			gsap.from(details, {
+				y: 24,
+				opacity: 0,
+				stagger: 0.12,
+				duration: 0.7,
+				ease: 'power2.out',
+				scrollTrigger: {
+					trigger: item,
+					start: 'top 82%',
+					once: true,
+				},
+			});
+		});
 	}
 
 	if ($('.tp_fade_top').length > 0) {

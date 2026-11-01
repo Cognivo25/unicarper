@@ -87,3 +87,42 @@ body:has(.ab-inner-hero-area) #header-sticky:not(.header-sticky) .tp-header-3-lo
 .uc-footer-contact a { overflow-wrap: anywhere; }
 .uc-footer-services a { font-size: 16px; }
 @media (min-width: 1200px) { .tp-footer-3-area .footer-col-3-3 { padding-left: 50px; } }
+
+/* Scroll-led statement in the homepage introduction. */
+.scroll-lit-text { --scroll-progress: 0; }
+.scroll-lit-text--dark-ink { --scroll-lit-on: #19191a; --scroll-lit-off: rgba(25,25,26,.2); }
+.scroll-lit-text span { background: none; background-clip: initial; -webkit-background-clip: initial; }
+.tp-about-3-area { background: #080808; color: #fff; }
+.tp-about-3-area .tp-subtitle-text { color: #fff; }
+.tp-about-3-area .tp-section-subtitle-2 svg path { fill: rgba(255,255,255,.58); }
+.tp-about-3-area .tp-about-3-content p { color: rgba(255,255,255,.72); font-size: 23px; line-height: 1.65; }
+.tp-about-3-area .tp-about-3-content { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(32px, 6vw, 96px); align-items: start; }
+.tp-about-3-area .tp-about-3-content p { max-width: none; margin-bottom: 34px; }
+.tp-about-3-area .tp-about-3-content > a { grid-column: 1 / -1; justify-self: start; }
+.scroll-reveal-statement {
+  --scroll-progress: 0;
+  margin: 34px 0 56px;
+  color: #414141;
+  font-family: var(--tp-ff-syne);
+  font-size: clamp(48px, 4.6vw, 88px);
+  font-weight: 700;
+  letter-spacing: -.065em;
+  line-height: .98;
+}
+.scroll-reveal-statement span {
+  --fill: clamp(0%, calc((var(--scroll-progress) * 6 - var(--word-index)) * 100%), 100%);
+  background: linear-gradient(90deg, #fff var(--fill), #414141 var(--fill));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background 80ms linear;
+}
+.scroll-reveal-statement .statement-line-break { display: block; }
+@media (max-width: 767px) {
+  .scroll-reveal-statement { margin: 24px 0 38px; font-size: clamp(40px, 10vw, 62px); line-height: 1.02; }
+  .tp-about-3-area .tp-about-3-content p { font-size: 19px; line-height: 1.55; }
+}
+@media (max-width: 991px) {
+  .tp-about-3-area .tp-about-3-content { grid-template-columns: 1fr; }
+  .tp-about-3-area .tp-about-3-content > a { grid-column: 1; }
+}
